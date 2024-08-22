@@ -265,7 +265,7 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  main.HIstoria .contenidoHistoria .videoContaer {
+  main.Historia .contenidoHistoria .videoContainer {
     display: none;
   }
   main.productos .listaProductos {

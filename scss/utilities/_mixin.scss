@@ -1,0 +1,17 @@
+//@mixin center-text {
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    //text-align: center;
+//  }
+  
+  @mixin transition($property, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+  }
+  
+  @mixin box-shadow($color: rgba(0, 0, 0, 0.1), $offset: 2px) {
+    -webkit-box-shadow: 0px $offset $offset $color;
+    -moz-box-shadow: 0px $offset $offset $color;
+    box-shadow: 0px $offset $offset $color;
+  }
+  

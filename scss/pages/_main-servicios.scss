@@ -1,0 +1,63 @@
+main.servicios{
+    .section {
+        background: rgba(255, 255, 255, 0.6); // Fondo semi-transparente
+        padding: $spacing;
+        margin-bottom: $spacing;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+        p {
+          margin-bottom: $spacing / 2;
+        }
+      
+        ul {
+          margin-left: $spacing;
+          list-style-type: disc;
+        }
+      
+        .button-container {
+          text-align: center;
+          margin-top: $spacing;
+      
+          input[type="submit"] {
+            background-color: $highlight-color;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+      
+            &:hover {
+              background-color: darken($highlight-color, 10%);
+            }
+          }
+        }
+      }
+    
+    img {
+        width: 80%; // Ajusta el ancho de la imagen al 80% del contenedor
+        max-width: 500px; // Establece un ancho máximo para que no sea demasiado grande
+        height: auto; // Mantiene la proporción de la imagen
+        display: block; // Hace que la imagen se comporte como un bloque para poder centrarla
+        margin: $spacing auto; // Centra la imagen horizontalmente y agrega un margen superior e inferior
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+      
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+}
+
+  

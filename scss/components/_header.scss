@@ -1,0 +1,48 @@
+header.header {
+    background-color: $primary-color;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+
+    a{
+        color: $text-color;
+        font-size: $font-family-base;
+
+        &:hover {
+            color: $highlight-color;
+        }
+    }
+  
+    nav.navbar {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-between;
+      font-family: "Open Sans", sans-serif;
+  
+      .logo {
+        max-width: 100%;
+        height: auto;
+        width: 100px;
+      }
+  
+      .navbar-nav {
+        display: flex;
+        gap: 40px;
+  
+        .nav-link {
+          color: $text-color;
+          text-decoration: none;
+          @include transition(color, 0.3s);
+  
+          &:hover {
+            color: $highlight-color;
+            transform: scale(1.1); // Aumenta su tamaño un 10%
+          }
+        }
+      }
+    }
+  }
+  

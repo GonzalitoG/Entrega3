@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    main.HIstoria{
+      .contenidoHistoria{
+        .videoContaer{
+          display: none;
+        }
+      }
+    }
+  
+    main.productos{
+      .listaProductos {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+  }
+  

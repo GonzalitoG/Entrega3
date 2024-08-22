@@ -1,0 +1,72 @@
+main.carousel {
+    .carousel {
+      .carousel-inner {
+        @include box-shadow($color: rgba(0, 0, 0, 0.2), $offset: 4px)
+        }
+        .carousel-item {
+          img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+          }
+        }
+  
+        .carousel-caption-fixed {
+          position: absolute;
+          top: 20px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: $text-color;
+          padding: 10px;
+          z-index: 10;
+          max-width: 100%;
+  
+          .content {
+            text-align: center;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+  
+            h1 {
+              font-size: $font-size-title;
+              @extend %text-bold;
+              max-width: 600px;
+              margin: 0 auto;
+            }
+  
+            p {
+              font-size: $font-size-base;
+              font-weight: 300;
+              margin-top: 15px;
+              max-width: 600px;
+              margin: 0 auto;
+            }
+  
+            button {
+              background: $text-color;
+              outline: none;
+              border: none;
+              font-size: 1rem;
+              font-weight: 500;
+              margin-top: 20px;
+              padding: 12px 30px;
+              border-radius: 6px;
+              cursor: pointer;
+              transition: 0.2s ease;
+  
+              &:hover {
+                color: $text-color;
+                background: $highlight-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  
+
+
+  

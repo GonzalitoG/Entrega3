@@ -29,6 +29,10 @@ header.header a {
 header.header a:hover {
   color: #C06B3F;
 }
+header.header .navbar-toggler {
+  background-color: #888888;
+  border-color: #ffffff;
+}
 header.header nav.navbar {
   display: flex;
   align-items: center;
@@ -113,29 +117,29 @@ main.carousel .carousel .carousel-caption-fixed .content button:hover {
   background: #C06B3F;
 }
 
-main.Historia .contenidoHistoria {
+main.historia .contenidoHistoria {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-main.Historia .contenidoHistoria .videoContainer,
-main.Historia .contenidoHistoria .textContainer {
+main.historia .contenidoHistoria .videoContainer,
+main.historia .contenidoHistoria .textContainer {
   margin: 10px;
 }
-main.Historia .contenidoHistoria .videoContainer iframe,
-main.Historia .contenidoHistoria .textContainer iframe {
+main.historia .contenidoHistoria .videoContainer iframe,
+main.historia .contenidoHistoria .textContainer iframe {
   margin: 0 0 0 15px;
   width: 700px;
   height: 500px;
 }
-main.Historia .contenidoHistoria .videoContainer h2,
-main.Historia .contenidoHistoria .textContainer h2 {
+main.historia .contenidoHistoria .videoContainer h2,
+main.historia .contenidoHistoria .textContainer h2 {
   margin: 0 0 10px 0;
   text-align: center;
   margin-bottom: 10px;
 }
-main.Historia .contenidoHistoria .videoContainer p,
-main.Historia .contenidoHistoria .textContainer p {
+main.historia .contenidoHistoria .videoContainer p,
+main.historia .contenidoHistoria .textContainer p {
   margin: 0 0 10px 0;
   padding-right: 10px;
   text-align: justify;
@@ -242,34 +246,76 @@ main.servicios img:hover {
   }
 }
 
-footer {
-  background-color: #1c0d02;
-  background: linear-gradient(to left, #000000, #333333);
+footer.pie-pagina {
+  width: 100%;
+  background-color: #191919;
+}
+footer.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+footer.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+footer.pie-pagina .grupo-1 .box h2 {
+  color: #f8f9fa;
+  margin-bottom: 25px;
+  font-size: "Roboto", sans-serif;
+}
+footer.pie-pagina .grupo-1 .box p {
+  color: #f8f9fa;
+  margin-bottom: 10px;
+}
+footer.pie-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #f8f9fa;
+  margin-right: 10px;
+  background-color: black;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+footer.pie-pagina .grupo-1 .box .red-social a:hover {
+  color: #C06B3F;
+  transform: scale(1.1);
+}
+footer.pie-pagina .grupo-2 {
+  background-color: black; /* no uso la variable porque quiero que sea un tono distinto */
+  padding: 15px 10px;
   text-align: center;
   color: #f8f9fa;
 }
-footer h3 {
-  text-align: left;
-  color: #f8f9fa;
-}
-footer ul {
-  text-align: left;
-  list-style: none;
-}
-footer p {
-  text-align: center;
-  color: #f8f9fa;
-}
-footer img {
-  width: 50px;
+footer.pie-pagina .grupo-2 small {
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  main.Historia .contenidoHistoria .videoContainer {
+  main.historia .contenidoHistoria .videoContainer {
     display: none;
   }
   main.productos .listaProductos {
     grid-template-columns: 1fr;
+  }
+  footer.pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 }
 

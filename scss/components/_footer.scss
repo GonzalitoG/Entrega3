@@ -1,26 +1,98 @@
-footer {
-    background-color: #1c0d02;
-    background: linear-gradient(to left, #000000, #333333);
-    text-align: center;
-    color: $text-color;
+//footer {
+//    background-color: #1c0d02;
+//    background: linear-gradient(to left, #000000, #333333);
+  //  text-align: center;
+  //  color: $text-color;
   
-    h3 {
-      text-align: left;
-      color: $text-color;
+   // h3 {
+     // text-align: left;
+      //color: $text-color;
+    //}
+  
+ //   ul {
+ //     text-align: left;
+ //     list-style: none;
+ //   }
+  
+ //   p {
+ //     text-align: center;
+ //     color: $text-color;
+ //   }
+  
+ //   img {
+ //     width: 50px;
+ //   }
+ // }
+ // Probando un footer nuevo pero dejo el viejo como comentario por las dudas
+
+ footer.pie-pagina{
+  width: 100%;
+  background-color: $primary-color;
+  
+  .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+    .box {
+      figure{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        width: 250px;
+      }
     }
+      h2{
+        color: $text-color;
+        margin-bottom: 25px;
+        font-size: $font-family-base;
+
+      }
+      p{
+        color: $text-color;
+        margin-bottom: 10px;
+      }
+      .red-social{
+        a{
+          display: inline-block;
+          text-decoration: none;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          color: $text-color;
+          margin-right: 10px;
+          background-color: black;
+          text-align: center;
+          @include transition(color, 0.3s);
   
-    ul {
-      text-align: left;
-      list-style: none;
-    }
-  
-    p {
-      text-align: center;
-      color: $text-color;
-    }
-  
-    img {
-      width: 50px;
+          &:hover {
+            color: $highlight-color;
+            transform: scale(1.1); 
+        }
+
+      }
+    
+
     }
   }
+ }
+ .grupo-2{
+  background-color: black; /* no uso la variable porque quiero que sea un tono distinto */
+  padding: 15px 10px;
+  text-align: center;
+  color: $text-color;
   
+  small{
+    font-size: 15px;
+  }
+  
+ }
+}

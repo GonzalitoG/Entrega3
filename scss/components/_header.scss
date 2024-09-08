@@ -12,7 +12,13 @@ header.header {
         &:hover {
             color: $highlight-color;
         }
+        
     }
+    .navbar-toggler {
+      background-color: #888888; 
+      border-color: #ffffff;     
+  }
+  
   
     nav.navbar {
       display: flex;

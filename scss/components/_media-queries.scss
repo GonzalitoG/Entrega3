@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    main.Historia{
+    main.historia{
       .contenidoHistoria{
         .videoContainer{
           display: none;
@@ -12,6 +12,14 @@
         grid-template-columns: 1fr;
       }
     }
-    
+    footer.pie-pagina{
+      .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+      }  
+    }  
   }
+
   

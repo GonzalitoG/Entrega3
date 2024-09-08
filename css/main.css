@@ -61,14 +61,15 @@ header.header nav.navbar .navbar-nav .nav-link:hover {
 }
 
 main.carousel .carousel .carousel-inner {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+main.carousel .carousel .carousel-item {
+  height: 80vh;
 }
 main.carousel .carousel .carousel-item img {
   width: 100%;
-  height: auto;
-  max-height: 600px;
+  height: 100%;
   object-fit: cover;
 }
 main.carousel .carousel .carousel-caption-fixed {

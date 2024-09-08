@@ -12,6 +12,33 @@
         grid-template-columns: 1fr;
       }
     }
+    main.servicios {
+
+      &::before {
+       display: none;
+      }
+    }
+  
+    main.contacto{
+      section.mapa{
+        iframe{
+          height: auto;
+        }
+      }
+      section.redes-sociales{
+        ul{
+          margin: 0;
+
+          li{
+            margin: 0 $spacing / 2;
+  
+            a{
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
     footer.pie-pagina{
       .grupo-1{
         width: 90%;

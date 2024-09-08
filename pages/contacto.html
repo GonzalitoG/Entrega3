@@ -57,50 +57,58 @@
   </nav>
 </header>
    
-    <main>
-        <h2>¡Contactanos!</h2>
-        <section>
-            <p>¡Estamos emocionados de escucharte! No dudes en ponerte en contacto con nosotros para cualquier consulta,
-                sugerencia o colaboración. Utiliza el formulario a continuación o los detalles de contacto proporcionados
-                para conectarte con nuestro equipo. ¡Esperamos poder hablar contigo pronto!</p>
-            <h4>Horario de Atención:</h4>
-            <ul>
-                <li>Lunes a Viernes: 09:00 a 17:00</li>
-                <li>Sabods y Domingos: Cerrado</li>
-            </ul>
-            <h4>Formulario de Contacto</h4>
-            <form action="formulario.php" method="post">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" name="Nombre" id="nombre" placeholder="Lionel Messi">
+<main class="contacto">
+  <h2>¡Contáctanos!</h2>
+  <section class="descripcion">
+      <p>¡Estamos emocionados de escucharte! No dudes en ponerte en contacto con nosotros para cualquier consulta,
+          sugerencia o colaboración. Utiliza el formulario a continuación o los detalles de contacto proporcionados
+          para conectarte con nuestro equipo. ¡Esperamos poder hablar contigo pronto!</p>
+      <h4>Horario de Atención:</h4>
+      <ul>
+          <li>Lunes a Viernes: 09:00 a 17:00</li>
+          <li>Sábados y Domingos: Cerrado</li>
+      </ul>
+  </section>
+
+  <section class="formulario-section">
+      <h4>Formulario de Contacto</h4>
+      <form class="formulario" action="formulario.php" method="post">
+          <label for="nombre">Nombre y Apellido:</label>
+          <input type="text" name="Nombre" id="nombre" placeholder="Lionel Messi">
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" name="email" id="email">
+
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
+
+          <input type="submit" value="Enviar">
+      </form>
+  </section>
+
+  <section class="mapa">
+      <h4>Atención al Público</h4>
+      <p>¡Ven a conocer nuestro nuevo local!</p>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.675710389039!2d-64.23022718804495!3d-31.340327874189747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299c4b8e65acb%3A0x57274a189d24e35!2sLa%20Bombonera!5e0!3m2!1ses-419!2sar!4v1720654729842!5m2!1ses-419!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="redes-sociales">
+      <h4>Nuestras Redes</h4>
+      <ul>
+          <li><a href="https://facebook.com/TheCoffeHouse" class="fa-brands fa-facebook"></a></li>
+          <li><a href="https://instagram.com" class="fa-brands fa-instagram"></a></li>
+          <li><a href="https://twitter.com" class="fa-brands fa-twitter"></a></li>
+          <li><a href="https://youtube.com" class="fa-brands fa-youtube"></a></li>
+      </ul>
+  </section>
+  </main>
     
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email" id="email">
-    
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto">
-    
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
-    
-                <input type="submit" value="Enviar">
-            </form>
-            <h4>Atencion al Publico</h4>
-            <p>¡Veni a conocer nuestro nuevo local!</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.675710389039!2d-64.23022718804495!3d-31.340327874189747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299c4b8e65acb%3A0x57274a189d24e35!2sLa%20Bombonera!5e0!3m2!1ses-419!2sar!4v1720654729842!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Nuestras Redes</h4>
-            <ul>
-                <li><a href="https://instagram.com/TheCoffeHouse/">Instagram</a></li>
-                <li><a href="https://wa.me/49089432849042">WhatsApp</a></li>
-                <li><a href="https://facebook.com/TheCoffeHouse">Facebook</a></li>
-            </ul>
-    
-        </section>
-    
-    </main>
-        
     <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
